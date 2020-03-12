@@ -36,7 +36,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://n330518.gitee.io/images/CFG.png">
 <meta property="article:published_time" content="2020-03-12T04:45:22.719Z">
-<meta property="article:modified_time" content="2020-03-12T08:09:36.330Z">
+<meta property="article:modified_time" content="2020-03-12T09:16:21.502Z">
 <meta property="article:author" content="北纬330518">
 <meta property="article:tag" content="CFG解锁">
 <meta property="article:tag" content="Hackintosh">
@@ -221,7 +221,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-03-12 12:45:22 / 修改时间：16:09:36" itemprop="dateCreated datePublished" datetime="2020-03-12T12:45:22+08:00">2020-03-12</time>
+              <time title="创建时间：2020-03-12 12:45:22 / 修改时间：17:16:21" itemprop="dateCreated datePublished" datetime="2020-03-12T12:45:22+08:00">2020-03-12</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -300,7 +300,46 @@
 
     
     
+    <style>
+    hr {
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .description {
+        margin: 0 0 10px 0;
+        text-align: center;
+        font-weight: 700;
+    }
     
+    #qrcode {
+        width: 138px;
+        height: 138px;
+        margin: 0 auto;
+    }
+
+    canvas, img#qrcodeImg {
+        width: 128px;
+        border: 3px solid #000;
+        padding: 2px;
+        background: #fff;
+    }
+</style>
+<hr />
+<div class="qrcodeBox">
+    <p class="description">本文地址二维码</p>
+    <div id="qrcode"></div>
+    <img id="qrcodeImg" alt="qrcodeImg" />
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
+    <script src="/js/jquery.qrcode.min.js"></script>
+    <script>
+        var qrcode = $('#qrcode').qrcode(window.location.href).hide();
+        var canvas = $('canvas')[0];
+        $('#qrcodeImg').attr('src', canvas.toDataURL('image/png'));
+    </script>
+</div>
+
         
 
 <div>
@@ -513,9 +552,6 @@
 
 
   <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/three-waves.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-    <script defer src="/lib/three/canvas_sphere.min.js"></script>
 
 
   
