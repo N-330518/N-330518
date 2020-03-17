@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="7wDogXkLUWgH4xxTkBllak0amH2pToGBHtwJE1SwqTQ">
+  <meta name="baidu-site-verification" content="tHBnrzAPyf">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"n330518.gitee.io","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":"tree","mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="NexT主题个性化修改配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo主题NexT7.7.2个性化修改随笔记">
+<meta property="og:url" content="https://n330518.gitee.io/Hexo-NexT/index.html">
+<meta property="og:site_name" content="北纬330518">
+<meta property="og:description" content="NexT主题个性化修改配置">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/n330518/img/raw/master/uPic/%E6%88%AA%E5%B1%8F2020-03-1701.56.57.png">
+<meta property="og:image" content="https://gitee.com/n330518/img/raw/master/uPic/%E6%88%AA%E5%B1%8F2020-03-1701.57.51.png">
+<meta property="article:published_time" content="2020-03-17T10:41:53.251Z">
+<meta property="article:modified_time" content="2020-03-17T11:05:59.526Z">
+<meta property="article:author" content="北纬330518">
+<meta property="article:tag" content="Hackintosh">
+<meta property="article:tag" content="Hexo blog">
+<meta property="article:tag" content="NexT主题">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/n330518/img/raw/master/uPic/%E6%88%AA%E5%B1%8F2020-03-1701.56.57.png">
+
+<link rel="canonical" href="https://n330518.gitee.io/Hexo-NexT/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true
+  };
+</script>
+
+  <title>Hexo主题NexT7.7.2个性化修改随笔记 | 北纬330518</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">北纬330518</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">随笔备忘博客</h1>
+      
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://n330518.gitee.io/Hexo-NexT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="北纬330518">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="北纬330518">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          Hexo主题NexT7.7.2个性化修改随笔记
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-17 18:41:53 / 修改时间：19:05:59" itemprop="dateCreated datePublished" datetime="2020-03-17T18:41:53+08:00">2020-03-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo-blog/" itemprop="url" rel="index"><span itemprop="name">Hexo blog</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Hexo-NexT/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Hexo-NexT/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <center>
+  <font color="#A9A9A9" size="2">
+    NexT主题个性化修改配置
+    </font></center>
+
+
+
+<a id="more"></a>
+
+<h4 id="自定义文章显示样式"><a href="#自定义文章显示样式" class="headerlink" title="自定义文章显示样式"></a>自定义文章显示样式</h4><ol>
+<li><p>在 NexT 主题的配置文件<code>_config.yml</code> 中，开启个性定制控制文件,<br>找到如下配置项：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plain"># Define custom file paths.<br># Create your custom files in site directory &#96;source&#x2F;_data&#96; and uncomment needed files below.<br>custom_file_path:<br>  #head: source&#x2F;_data&#x2F;head.swig<br>  #header: source&#x2F;_data&#x2F;header.swig<br>  #sidebar: source&#x2F;_data&#x2F;sidebar.swig<br>  #postMeta: source&#x2F;_data&#x2F;post-meta.swig<br>  #postBodyEnd: source&#x2F;_data&#x2F;post-body-end.swig<br>  #footer: source&#x2F;_data&#x2F;footer.swig<br>  #bodyEnd: source&#x2F;_data&#x2F;body-end.swig<br>  #variable: source&#x2F;_data&#x2F;variables.styl<br>  #mixin: source&#x2F;_data&#x2F;mixins.styl<br>  style: source&#x2F;_data&#x2F;styles.styl<br></code></pre></td></tr></table></figure>
+
+<p>将其中的<code>style: source/_data/styles.styl</code> 这一项前面的<code>#</code>符号去掉，取消该项的注释。</p>
+</li>
+<li><p>在blog文件根目录的<code>/source/_data/</code>目录下新建一个<code>styles.styl</code>文件（注意不是主题目录下，是blog文件的根目录下。如果没有那个目录就自行新建一个）。</p>
+<p>打开新建的<code>styles.styl</code>文件，写入如下内容：</p>
+<h6 id="文章边框阴影效果"><a href="#文章边框阴影效果" class="headerlink" title="文章边框阴影效果"></a>文章边框阴影效果</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs plain">.post-block &#123;<br>   margin-top: 40px;<br>   margin-bottom: 40px;<br>   padding: 25px;<br>   -webkit-box-shadow: 0 0 35px rgba(202, 203, 203, .9);<br>   -moz-box-shadow: 0 0 35px rgba(202, 203, 204, .9);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="去除在页面文章之间的分割线"><a href="#去除在页面文章之间的分割线" class="headerlink" title="去除在页面文章之间的分割线"></a>去除在页面文章之间的分割线</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plain">.posts-expand .post-eof &#123;<br>    margin: 0px;<br>    background-color: rgba(255, 255, 255, 0);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="页面背景色"><a href="#页面背景色" class="headerlink" title="页面背景色"></a>页面背景色</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">.container &#123;<br>    background-color: rgba(1, 0, 0, 0.1);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="文章内文字体大小"><a href="#文章内文字体大小" class="headerlink" title="文章内文字体大小"></a>文章内文字体大小</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs plain">.post-body p&#123;<br>  font-family: $font-family-posts;<br>  word-wrap();<br><br>  +desktop-large() &#123;<br>    font-size: 1.1em<br>  &#125;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="文章内图片配文字体大小"><a href="#文章内图片配文字体大小" class="headerlink" title="文章内图片配文字体大小"></a>文章内图片配文字体大小</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plain">.post-body &#123;<br>  .image-caption, .figure .caption &#123;<br>  color: $grey-dark;<br>  font-size: .5em  &#x2F;&#x2F;$font-size-small;<br>  font-weight: bold;<br>  line-height: 1;<br>  margin: -20px auto 15px;<br>  text-align: center;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="文章内链接文本样式"><a href="#文章内链接文本样式" class="headerlink" title="文章内链接文本样式"></a>文章内链接文本样式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plain">.post-body p a&#123;<br>  color: #0593d3;<br>  border-bottom: none;<br>  border-bottom: 1px solid #0593d3;<br>  &amp;:hover &#123;<br>    color: #fc6423;<br>    border-bottom: none;<br>    border-bottom: 1px solid #fc6423;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="文章内小代码块高亮样式"><a href="#文章内小代码块高亮样式" class="headerlink" title="文章内小代码块高亮样式"></a>文章内小代码块高亮样式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plain">code &#123;<br>    color: #ff7600;<br>    background: #fbf7f8;<br>    margin: 2px;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="文章内大代码块样式"><a href="#文章内大代码块样式" class="headerlink" title="文章内大代码块样式"></a>文章内大代码块样式</h6><p>大代码块在主题配置文件<code>_config.yml</code> 中设置。</p>
+<h6 id="页面留白更改"><a href="#页面留白更改" class="headerlink" title="页面留白更改"></a>页面留白更改</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plain">.header-inner &#123;<br>    padding-top: 0px;<br>    padding-bottom: 0px;<br>&#125;<br>.posts-expand &#123;<br>    padding-top: 10px;<br>&#125;<br>.posts-expand .post-meta &#123;<br>    margin: 5px 0px 0px 0px;<br>&#125;<br>.post-button &#123;<br>    margin-top: 0px;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="去除页面底部页码上面的横线"><a href="#去除页面底部页码上面的横线" class="headerlink" title="去除页面底部页码上面的横线"></a>去除页面底部页码上面的横线</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plain">.pagination &#123;<br>    border: none;<br>    margin: 0px;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="归档页时间轴样式"><a href="#归档页时间轴样式" class="headerlink" title="归档页时间轴样式"></a>归档页时间轴样式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs plain">.posts-collapse &#123;<br>    margin: 50px 50px;<br>&#125;<br>@media (max-width: 1023px) &#123;<br>    .posts-collapse &#123;<br>        margin: 50px 20px;<br>    &#125;<br>&#125;<br><br>&#x2F;&#x2F; 时间轴文章标题<br>#.posts-collapse .post-title a &#123;<br>    color: rgb(80, 115, 184);<br>&#125;<br>.posts-collapse .post-title a:hover &#123;<br>    color: rgb(25, 85, 255);<br>&#125;<br>&#x2F;&#x2F; 时间轴文章标题底部虚线<br>#.posts-collapse .post-header:hover &#123;<br>    border-bottom-color: rgb(161, 102, 171);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="自定义ABOUT页面的样式"><a href="#自定义ABOUT页面的样式" class="headerlink" title="自定义ABOUT页面的样式"></a>自定义ABOUT页面的样式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs plain">.about-page &#123;<br>    margin: -80px 0px 60px 0px;<br>    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);<br>    background-color: rgb(255, 255, 255);<br>    padding: 106px 36px 36px 36px;<br>&#125;<br>@media (max-width: 767px) &#123;<br>    .about-page &#123;<br>        margin: -73px 0px 50px 0px;<br>        padding: 96px 15px 20px 15px;<br>    &#125;<br>&#125;<br>h2.about-title &#123;<br>    border-left: none !important;<br>    margin-left: 0px !important;<br>    padding-left: 0px !important;<br>    text-align: center;<br>    background-image: linear-gradient(90deg, #a166ab 0%, #a166ab 40%, #ef4e7b 45%, #f37055 50%, #ef4e7b 55%, #a166ab 60%, #a166ab 100%);<br>    background-size: cover;<br>    -webkit-background-clip: text;<br>    -webkit-text-fill-color: transparent;<br>    user-select: none;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="本地搜索框样式"><a href="#本地搜索框样式" class="headerlink" title="本地搜索框样式"></a>本地搜索框样式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">.local-search-popup .local-search-input-wrapper input &#123;<br>    padding: 9px 0px;<br>    height: 21px;<br>    background-color: rgb(255, 255, 255);<br>&#125;<br>.local-search-popup .popup-btn-close &#123;<br>    border-left: none;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="标签页面超链接样式"><a href="#标签页面超链接样式" class="headerlink" title="标签页面超链接样式"></a>标签页面超链接样式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plain">.tag-cloud a &#123;<br>    color: rgb(80, 115, 184);<br>    border-bottom: 1px solid rgb(80, 115, 184);<br>    text-decoration: none;<br>&#125;<br>#.tag-cloud a:hover &#123;<br>    color: rgb(161, 102, 171);<br>    border-bottom: 1px solid rgb(161, 102, 171);<br>    text-decoration: none;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="选中文字部分的样式"><a href="#选中文字部分的样式" class="headerlink" title="选中文字部分的样式"></a>选中文字部分的样式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">::selection &#123;<br>    background-color: rgb(38, 140, 242);<br>    color: rgb(255, 255, 255);<br>&#125;<br>*::-moz-selection &#123;<br>    background-color: rgb(38, 140, 242);<br>    color: rgb(255, 255, 255);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="页头网站名称样式"><a href="#页头网站名称样式" class="headerlink" title="页头网站名称样式"></a>页头网站名称样式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">.site-title &#123;<br>  display: inline-block;<br>  font-family: $font-family-logo;<br>  font-size: 2em; &#x2F;&#x2F;设置字体大小<br>  font-weight: normal;<br>  line-height: 1.5em;<br>  vertical-align: top;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h6 id="网站导航底框"><a href="#网站导航底框" class="headerlink" title="网站导航底框"></a>网站导航底框</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">.menu &#123;<br>    text-align: center;<br>    margin-top: 0px;<br>    margin-bottom: 0px;<br>    padding: 5px;<br>    background-color: rgba(255, 255, 255, 0.75);<br>    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<p>   主题集成的文章样式文件在NexT主题目录下<br>   <code>/source/css/_common/components/opst/post.styl</code>文件内，也可以在这里直接修改或者添加内容定义样式。</p>
+<p>   🔚</p>
+<hr>
+<h4 id="文章底部添加本页二维码链接"><a href="#文章底部添加本页二维码链接" class="headerlink" title="文章底部添加本页二维码链接"></a>文章底部添加本页二维码链接</h4><ol>
+<li><p>在 NexT 主题的配置文件<code>_config.yml</code> 中，开启个性定制控制文件。<br>找到如下配置项：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plain"># Define custom file paths.<br># Create your custom files in site directory &#96;source&#x2F;_data&#96; and uncomment needed files below.<br>custom_file_path:<br>  #head: source&#x2F;_data&#x2F;head.swig<br>  #header: source&#x2F;_data&#x2F;header.swig<br>  #sidebar: source&#x2F;_data&#x2F;sidebar.swig<br>  #postMeta: source&#x2F;_data&#x2F;post-meta.swig<br>  postBodyEnd: source&#x2F;_data&#x2F;post-body-end.swig<br>  #footer: source&#x2F;_data&#x2F;footer.swig<br>  #bodyEnd: source&#x2F;_data&#x2F;body-end.swig<br>  #variable: source&#x2F;_data&#x2F;variables.styl<br>  #mixin: source&#x2F;_data&#x2F;mixins.styl<br>  #style: source&#x2F;_data&#x2F;styles.styl<br></code></pre></td></tr></table></figure>
+
+<p>将其中的<code>#postBodyEnd</code> 这一项前面的<code>#</code>符号去掉，取消该项的注释。</p>
+</li>
+<li><p>在blog根目录的 <code>/source/_data/</code>目录下新建一个<code>post-body-end.swig</code>文件（注意不是主题目录下，是blog文件的根目录下。如果没有那个目录就自行新建一个）。</p>
+</li>
+<li><p>把所需的 <code>jquery.qrcode.js</code> 文件放入到NexT主题目录下的<code>/source/js/</code>文件夹中，例如 HexoBlog/hexo-theme-next-master/source/js/中。<br>下载： <a href="../download/jquery.qrcode.js.zip">jquery.qrcode.js.zip</a> </p>
+</li>
+<li><p>打开第2步新建的 post-body-end.swig写入如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs shili">&lt;p&gt;&lt;&#x2F;p&gt;<br>&lt;div style&#x3D;&quot;text-align:center;<br>  width: 80px;<br>  height: 80px;<br>  margin: 0 auto;&quot;&gt;<br>  <br>  &lt;div id&#x3D;&quot;qrcode&quot;&gt;&lt;&#x2F;div&gt;<br>    &lt;img id&#x3D;&quot;qrcodeImg&quot; alt&#x3D;&quot;qrcodeImg&quot; &#x2F;&gt;<br>    &lt;script src&#x3D;&quot;&#x2F;js&#x2F;jquery.qrcode.js&quot;&gt;&lt;&#x2F;script&gt;<br>    &lt;script&gt;<br>        var qrcode &#x3D; $(&#39;#qrcode&#39;).qrcode(window.location.href).hide();<br>        var canvas &#x3D; $(&#39;canvas&#39;)[0];<br>        $(&#39;#qrcodeImg&#39;).attr(&#39;src&#39;, canvas.toDataURL(&#39;image&#x2F;png&#39;));<br>    &lt;&#x2F;script&gt;<br>&lt;&#x2F;div&gt;<br><br>&lt;div style&#x3D;&quot;text-align:center;font-size:8px;&quot;&gt;<br> 自定义文字<br>&lt;&#x2F;div&gt;<br></code></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>其中第1行“<code>&lt;p&gt;&lt;/p&gt;</code>”为空行，目的是产生与上一块的间距，无需间距可删除。</p>
+<ol start="5">
+<li>自定义二维码显示位置：<br>在themes主题目录下的NexT主题目录下/layout/_macro文件夹内打开post.swig文件找到如下内容标记<img src="https://gitee.com/n330518/img/raw/master/uPic/%E6%88%AA%E5%B1%8F2020-03-1701.56.57.png" alt></li>
+</ol>
+<ol start="6">
+<li>剪切<code>postBodyEnd</code>这一行粘贴到你想要二维码显示的位置行。<br>例如将其剪切粘贴到<img src="https://gitee.com/n330518/img/raw/master/uPic/%E6%88%AA%E5%B1%8F2020-03-1701.57.51.png" alt></li>
+</ol>
+<p>那么二维码将会显示到<code>post-copyright.swig</code>之下，也就是在版权信息的下方。</p>
+<p><strong>生成二维码参考引用</strong>：<br><a href="https://www.wzblog.fun/posts/add-qrcode-to-post/" target="_blank" rel="noopener">Wz 的个人小屋的在文章底部添加当前页二维码</a><br><a href="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/" target="_blank" rel="noopener">jquery CDN files</a></p>
+<p>🔚</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Hackintosh/" rel="tag"><i class="fa fa-tag"></i> Hackintosh</a>
+              <a href="/tags/Hexo-blog/" rel="tag"><i class="fa fa-tag"></i> Hexo blog</a>
+              <a href="/tags/NexT%E4%B8%BB%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> NexT主题</a>
+          </div>
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>北纬330518
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://n330518.gitee.io/Hexo-NexT/" title="Hexo主题NexT7.7.2个性化修改随笔记">https://n330518.gitee.io/Hexo-NexT/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> 许可协议。转载请注明出处！署名-非商业性使用-禁止演绎 
+  </li>
+</ul>
+</div>
+<p></p>
+<div style="text-align:center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;">
+   
+  <div id="qrcode"></div>
+    <img id="qrcodeImg" alt="qrcodeImg" />
+    <script src="/js/jquery.qrcode.js"></script>
+    <script>
+        var qrcode = $('#qrcode').qrcode(window.location.href).hide();
+        var canvas = $('canvas')[0];
+        $('#qrcodeImg').attr('src', canvas.toDataURL('image/png'));
+    </script>
+</div>
+
+<div style="text-align:center;font-size:8px;">
+ 扫码移动端阅读本文
+</div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/b360mcfgjs/" rel="prev" title="Gigabyte B360 M Aorus Pro解锁CFG">
+      <i class="fa fa-chevron-left"></i> Gigabyte B360 M Aorus Pro解锁CFG
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义文章显示样式"><span class="nav-number">1.</span> <span class="nav-text">自定义文章显示样式</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#文章边框阴影效果"><span class="nav-number">1.0.1.</span> <span class="nav-text">文章边框阴影效果</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#去除在页面文章之间的分割线"><span class="nav-number">1.0.2.</span> <span class="nav-text">去除在页面文章之间的分割线</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#页面背景色"><span class="nav-number">1.0.3.</span> <span class="nav-text">页面背景色</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#文章内文字体大小"><span class="nav-number">1.0.4.</span> <span class="nav-text">文章内文字体大小</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#文章内图片配文字体大小"><span class="nav-number">1.0.5.</span> <span class="nav-text">文章内图片配文字体大小</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#文章内链接文本样式"><span class="nav-number">1.0.6.</span> <span class="nav-text">文章内链接文本样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#文章内小代码块高亮样式"><span class="nav-number">1.0.7.</span> <span class="nav-text">文章内小代码块高亮样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#文章内大代码块样式"><span class="nav-number">1.0.8.</span> <span class="nav-text">文章内大代码块样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#页面留白更改"><span class="nav-number">1.0.9.</span> <span class="nav-text">页面留白更改</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#去除页面底部页码上面的横线"><span class="nav-number">1.0.10.</span> <span class="nav-text">去除页面底部页码上面的横线</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#归档页时间轴样式"><span class="nav-number">1.0.11.</span> <span class="nav-text">归档页时间轴样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#自定义ABOUT页面的样式"><span class="nav-number">1.0.12.</span> <span class="nav-text">自定义ABOUT页面的样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#本地搜索框样式"><span class="nav-number">1.0.13.</span> <span class="nav-text">本地搜索框样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#标签页面超链接样式"><span class="nav-number">1.0.14.</span> <span class="nav-text">标签页面超链接样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#选中文字部分的样式"><span class="nav-number">1.0.15.</span> <span class="nav-text">选中文字部分的样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#页头网站名称样式"><span class="nav-number">1.0.16.</span> <span class="nav-text">页头网站名称样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#网站导航底框"><span class="nav-number">1.0.17.</span> <span class="nav-text">网站导航底框</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文章底部添加本页二维码链接"><span class="nav-number">2.</span> <span class="nav-text">文章底部添加本页二维码链接</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="北纬330518"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">北纬330518</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:N330518@icloud.com" title="E-Mail → mailto:N330518@icloud.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">北纬330518</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">8k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">7 分钟</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+  <script>
+    (function(d, w, c) {
+      w.ChatraID = '';
+      var s = d.createElement('script');
+      w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+      };
+      s.async = true;
+      s.src = 'https://call.chatra.io/chatra.js';
+      if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+  </script>
+
+
+
+
+
+<script>
+if (document.querySelectorAll('div.pdf').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+    document.querySelectorAll('div.pdf').forEach(element => {
+      PDFObject.embed(element.getAttribute('target'), element, {
+        pdfOpenParams: {
+          navpanes : 0,
+          toolbar  : 0,
+          statusbar: 0,
+          pagemode : 'thumbs',
+          view     : 'FitH'
+        },
+        PDFJS_URL: '/lib/pdf/web/viewer.html',
+        height   : element.getAttribute('height') || '500px'
+      });
+    });
+  }, window.PDFObject);
+}
+</script>
+
+
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : true,
+      appId      : 'BPccsePNkQFdyQwh1TjbIfrF-gzGzoHsz',
+      appKey     : 'RUelhKFE6xFceSnja9oU8Rqt',
+      placeholder: "留言",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
